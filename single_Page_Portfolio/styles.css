@@ -8,7 +8,7 @@ body {
 
 /* Header styling */
 header {
-    background-color: #333;
+    background-color: #ef09b9;
     color: white;
     padding: 15px;
     display: flex;
@@ -16,9 +16,19 @@ header {
     align-items: center;
 }
 
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
 .name {
+    order: 1;
     font-size: 24px;
     font-weight: bold;
+}
+
+.contact-info {
+    order: 2;
 }
 
 nav ul {
@@ -38,8 +48,9 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #ffcc00;
     cursor: pointer;
+    text-decoration: underline;
+    font-weight: bold;
 }
 
 /* Section Styling */
@@ -60,19 +71,65 @@ h2 {
     margin-top: 10px;
 }
 
-/* Skills and Projects */
-.skill, .project {
+/* Skills and Projects Container */
+.skills-container, .projects-container {
+    display: flex; /* Allow skills to wrap to the next line */
+    justify-content: center; /* Center align the skills */
+    gap: 20px; /* Space between cards */
+    margin-bottom: 20px; /* Space between skills and projects */
+    flex-direction: row;
+}
+
+/* Individual Skill and Project Cards */
+
+.skill {
+    max-width: 300px; /* Limit the width of each card */
+    margin: 10px; /* Space between cards */
     display: flex;
     align-items: center;
     gap: 10px;
+    flex-direction: column; /* Stack content vertically within the card */
+    border: 1px solid #ddd; /* Light border around the card */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Space inside the card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
+    background-color: #fff; /* White background for the card */
 }
 
-/* Skill logo styling */
-.skill img {
-    width: 120px;      /* Consistent width for skill logos */
-    height: 150px;     /* Consistent height for skill logos */
-    object-fit: contain; /* Contain logos within the specified size */
+.project {
+    margin: 10px; /* Space between cards */
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-direction: column; /* Stack content vertically within the card */
+    border: 1px solid #ddd; /* Light border around the card */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Space inside the card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
+    background-color: #fff; /* White background for the card */
+    font-size: 20px;
 }
+
+.skill:hover, .project:hover {
+    transform: translateY(-5px); /* Slightly lift the card on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+}
+
+.skill img {
+    width: 80px; /* Fixed width for all images */
+    height: 80px; /* Fixed height for all images */
+    object-fit: contain; /* Maintain aspect ratio within the specified size */
+    margin: 10px; /* Space around each skill logo */
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.skill img:hover {
+    transform: scale(1.1); /* Slightly enlarge on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+}
+
 
 /* Footer styling */
 footer {
@@ -91,6 +148,36 @@ footer {
     color: #ffcc00;
 }
 
+#recommendation-list {
+    display: flex;
+    flex-direction: row;
+    gap: 20px; /* Space between recommendations */
+    padding: 20px; /* Padding around the container */
+    background-color: #f9f9f9; /* Light background color */
+    border-radius: 8px; /* Rounded corners for the container */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    align-items: center; /* Center align the cards */
+}
+
+#recommendation-list p {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 24px; /* Increase font size */
+    background-color: #fff; /* White background for each recommendation */
+    padding: 15px; /* Padding inside each recommendation */
+    border-radius: 8px; /* Rounded corners for each recommendation */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for each recommendation */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
+    max-width: 300px; /* Set a smaller width for the cards */
+    width: 100%; /* Ensure the card takes full width up to max-width */
+    text-align: center; /* Center align text */
+}
+
+#recommendation-list p:hover {
+    transform: translateY(-5px); /* Slightly lift the recommendation on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+}
 /* Recommendation form */
 #recommendation-form {
     margin-top: 20px;
@@ -99,6 +186,26 @@ footer {
 #recommendation-input {
     padding: 10px;
     width: 80%;
+}
+
+.about-container {
+    display: flex;
+    align-items: center; /* Align items vertically centered */
+}
+
+.about-container img {
+    margin-right: 20px; /* Space between image and description */
+}
+
+.about-description {
+    max-width: 600px; /* Adjust as needed */
+    font-size: 18px; /* Slightly larger font for readability */
+    line-height: 1.6; /* Improved line spacing */
+    color: #333; /* Darker color for better contrast */
+    background-color: #f9f9f9; /* Light background for emphasis */
+    padding: 20px; /* Padding around the text */
+    border-radius: 10px; /* Rounded corners for a modern look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 
 button {

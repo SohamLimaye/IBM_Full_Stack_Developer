@@ -9,7 +9,13 @@
 <body>
     <!-- Header Section with Name and Navigation -->
     <header>
-        <div class="name">John Doe</div>
+        <div class="container">
+            <div class="name">Soham Limaye</div>
+            <div class="contact-info">
+                <p>Phone: +91 95187 07753</p>
+                <p>Email: soham.22111058@viit.ac.in </p>
+            </div>
+        </div>
         <nav>
             <ul>
                 <li><a href="#about">About</a></li>
@@ -22,42 +28,58 @@
 
     <!-- About Section -->
     <section id="about">
-        <img src="lp-2.png" alt="Profile Picture">
-        <h2>About Me</h2>
-        <p>Hi, I'm John Doe, a web developer with 3 years of experience...</p>
+        <div class="about-container">
+            <img src="lp-2.png" alt="Profile Picture">
+            <div class="about-description">
+                <h2>Hi, I'm Soham Limaye</h2>
+                <p> a Final Year Computer Engineering student. I am a Full-Stack Web Developer. I am also learning ML</p>
+            </div>
+        </div>
     </section>
 
     <!-- Skills Section -->
     <section id="skills">
         <h2>Skills</h2>
-        <div class="skill">
-            <img src="html_logo.jfif" alt="HTML">
-            <span>HTML</span>
-        </div>
-        <div class="skill">
-            <img src="css_logo.jfif" alt="CSS">
-            <span>CSS</span>
-        </div>
-        <div class="skill">
-            <img src="js-logo.png" alt="JavaScript">
-            <span>JavaScript</span>
+        <div class="skills-container">
+            <div class="skill">
+                <img src="html_logo.jfif" alt="HTML">
+                <span>HTML</span>
+            </div>
+            <div class="skill">
+                <img src="css_logo.jfif" alt="CSS">
+                <span>CSS</span>
+            </div>
+            <div class="skill">
+                <img src="js-logo.png" alt="JavaScript">
+                <span>JavaScript</span>
+            </div>
+            <div class="skill">
+                <img src="react_logo.jfif" alt="React">
+                <span>React</span>
+            </div>
+            <div class="skill">
+                <img src="node_logo.jfif" alt="Node.js">
+                <span>Node.js</span>
+            </div>
         </div>
     </section>
 
     <!-- Projects Section -->
     <section id="projects">
-        <h2>Projects</h2>
-        <div class="project">
-            <h3>Project 1</h3>
-            <p>Description of Project 1...</p>
-        </div>
-        <div class="project">
-            <h3>Project 2</h3>
-            <p>Description of Project 2...</p>
-        </div>
-        <div class="project">
-            <h3>Project 3</h3>
-            <p>Description of Project 3...</p>
+        <h1>Projects</h1>
+        <div class="project-container">
+            <div class="project">
+                <h3>Full-Fledged Ecommerce app</h3>
+                <p> Created a fully functional app in python</p>
+            </div>
+            <div class="project">
+                <h3>Predictive maintenance for metro train</h3>
+                <p>Created a gradient-boost based model that predicts a part failure probability with 98% accuracy</p>
+            </div>
+            <div class="project">
+                <h3>A simple chat app in C++</h3>
+                <p> Created a messaging app that can send messages right from the terminal</p>
+            </div>
         </div>
     </section>
 
@@ -65,9 +87,9 @@
     <section id="recommendations">
         <h2>Recommendations</h2>
         <div id="recommendation-list">
-            <p>Recommendation 1...</p>
-            <p>Recommendation 2...</p>
-            <p>Recommendation 3...</p>
+            <p>Soham is an incredible leader and a high-spirited person</p>
+            <p>I've worked with Soham, on a school project and he is very professional</p>
+            <p>Soham sir is a great mentor and team lead. </p>
         </div>
 
         <!-- Recommendation Form -->
@@ -78,7 +100,9 @@
     </section>
 
     <footer>
-        <div class="home-icon">🏠</div>
+        <div class="home-icon" style="text-align: right;">
+            <a href="#top">🏠</a>
+        </div>
     </footer>
 
     <script src="script.js"></script>

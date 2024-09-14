@@ -1,0 +1,114 @@
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header styling */
+header {
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.name {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    color: #ffcc00;
+    cursor: pointer;
+}
+
+/* Section Styling */
+section {
+    padding: 40px 20px;
+}
+
+/* Profile image styling */
+#about img {
+    width: 120px;      /* Fixed width for passport size */
+    height: 150px;     /* Fixed height for passport size */
+    object-fit: cover; /* Ensure image maintains aspect ratio */
+    border-radius: 10px; /* Optional: slight border rounding */
+}
+
+/* Headings */
+h2 {
+    margin-top: 10px;
+}
+
+/* Skills and Projects */
+.skill, .project {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Skill logo styling */
+.skill img {
+    width: 120px;      /* Consistent width for skill logos */
+    height: 150px;     /* Consistent height for skill logos */
+    object-fit: contain; /* Contain logos within the specified size */
+}
+
+/* Footer styling */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.home-icon {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.home-icon:hover {
+    color: #ffcc00;
+}
+
+/* Recommendation form */
+#recommendation-form {
+    margin-top: 20px;
+}
+
+#recommendation-input {
+    padding: 10px;
+    width: 80%;
+}
+
+button {
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ffcc00;
+}

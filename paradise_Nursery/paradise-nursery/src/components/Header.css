@@ -29,3 +29,10 @@ header {
     border-radius: 5px;
     font-weight: bold;
   }
+
+  .cart-icon-image {
+    width: 1.5em;  /* Set the width to match the font size */
+    height: 1.5em; /* Set the height to match the font size */
+    margin-right: 8px;
+    vertical-align: middle; /* Align the icon vertically with the text */
+  }

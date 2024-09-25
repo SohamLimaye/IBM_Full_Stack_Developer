@@ -5,6 +5,7 @@ import LandingPage from './pages/LandingPage';
 import ProductListingPage from './pages/ProductListingPage';
 import ShoppingCartPage from './pages/ShoppingCartPage';
 import CartProvider from './context/CartContext';
+import './App.css';  // Import the CSS file
 
 const App = () => {
   return (

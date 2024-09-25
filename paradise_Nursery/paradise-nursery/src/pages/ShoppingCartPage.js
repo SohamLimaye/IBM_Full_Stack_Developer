@@ -1,5 +1,7 @@
 import React, { useContext } from 'react';
+import { Link } from 'react-router-dom';
 import { CartContext } from '../context/CartContext';
+import './ShoppingCartPage.css';  // Import the CSS file
 
 const ShoppingCartPage = () => {
   const { cart, updateQuantity, removeFromCart } = useContext(CartContext);
@@ -7,7 +9,7 @@ const ShoppingCartPage = () => {
   const totalCost = cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
 
   return (
-    <div>
+    <div className="shopping-cart-page">
       <h2>Shopping Cart</h2>
       <div className="cart-items">
         {cart.map(item => (
@@ -24,9 +26,13 @@ const ShoppingCartPage = () => {
           </div>
         ))}
       </div>
-      <h3>Total: ${totalCost}</h3>
-      <button>Continue Shopping</button>
-      <button>Checkout</button>
+      <h3 className="total-cost">Total: ${totalCost}</h3>
+      <div className="actions">
+        <Link to="/products">
+          <button>Continue Shopping</button>
+        </Link>
+        <button>Checkout</button>
+      </div>
     </div>
   );
 };
